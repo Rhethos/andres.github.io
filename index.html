@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Final Project - Andres Hamburger</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+	<!--Navigation Bar -->
+	<header class="header">
+    <div class="container">
+        <div class="header-flex">
+            <div class="logo"><a href="index.html">CRAFT</a></div>
+            <div class="burger">
+				<i id="burger-icon" class="fa-solid fa-burger"></i>
+			</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboot">About</a></li>
+                    <li><a href="#foliowho">Portfolio</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Added a dropdown menu -->
+        <div class="dropdown">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboot">About</a></li>
+                <li><a href="#foliowho">Portfolio</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+	<!-- Big Banner -->
+	<section class="bigbanner" id="home">
+		<div class="flexbox">
+			<div class="text">
+				<h1 data-aos="zoom-in">we are creative agency</h1>
+				<a class="btn" data-aos="zoom-in">explore now</a>
+			</div>			
+			<video src="video/bnw.mp4" muted autoplay loop></video>
+			<div class="overlay"></div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="about" id="aboot">
+		<div class="container">
+			<div class="about-flex">
+					<!-- Left -->
+				<div class="left">
+					<h2 data-aos="fade-down">who we are</h2>
+					<div class="bar" data-aos="fade-right"></div>
+					<h3 data-aos="zoom-in">we are a <strong>design agency</strong> that bring your ideas to life</h3>
+					<p data-aos="zoom-in">Craft is a photography studio that specializes in capturing lasting memories through photographs. With a team of skilled photographers and state-of-the-art equipment, Craft ensures that every shot is beautifully composed and expertly edited, from weddings to family portraits.</p>
+					<p data-aos="zoom-in">Craft has the expertise and experience to create stunning images that will be cherished for years to come.</p>
+					<a class="btn" data-aos="fade-up">Learn More</a>
+				</div>
+					<!-- Right -->
+				<div class="right" data-aos="fade-left"></div>				
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section class="portfolio" id="foliowho">
+		<h2 data-aos="fade-down">latest work</h2>
+			<div class="container">
+				<div class="portfolio-flex">
+					<div class="left">
+						<div class="card" id="img1" data-aos="fade-up">
+							<div class="description">
+								<h3>Portrait</h3>
+								<p>Black and White Collection</p>
+							</div>
+						</div>
+						<div class="card" id="img2" data-aos="fade-right">
+							<div class="description">
+								<h3>Tranquility</h3>
+								<p>Nature Collection</p>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="card" id="img3" data-aos="fade-left">
+							<div class="description">
+								<h3>Man in Nature</h3>
+								<p>Nature Collection</p>
+							</div>
+						</div>
+						<div class="card" id="img4" data-aos="fade-down">
+							<div class="description">
+								<h3>The Forest</h3>
+								<p>Nature Collection</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal And Carousel -->
+			<a href="#" onclick="return false" class="btn" id="openModalButton" data-aos="fade-up">more portfolio</a>
+
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+					<div class="carousel">
+						<img src="images/image1.jpg" alt="#">
+						<img src="images/image2.jpg" alt="#">
+						<img src="images/image3.jpg" alt="#">
+						<img src="images/image5.jpg" alt="#">
+						<img src="images/image7.jpg" alt="#">
+						<img src="images/image9.jpg" alt="#">
+						<img src="images/image10.jpg" alt="#">
+						<img src="images/image12.jpg" alt="#">
+						<img src="images/image13.jpg" alt="#">
+						<img src="images/image15.jpg" alt="#">
+						<img src="images/image16.jpg" alt="#">
+						<img src="images/image17.jpg" alt="#">
+						<img src="images/image18.jpg" alt="#">
+						<img src="images/image19.jpg" alt="#">
+						<img src="images/image20.jpg" alt="#">
+					</div>
+					<a class="previous-arrow">&#10094;</a>
+					<a class="next-arrow">&#10095;</a>
+			</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="services" id="service">
+		<div class="container">
+			<div class="services-flex">
+					<!-- Left -->
+				<div class="left">
+					<h2 data-aos="fade-down">featured services</h2>
+					<div class="bar" data-aos="fade-right"></div>
+					<h3 data-aos="zoom-in">the <strong>services</strong> that we are providing</h3>
+					<p id="p" data-aos="zoom-in">Craft offers a variety of photography services to meet the needs of their clients. They specialize in wedding and engagement photography, family portraits, and corporate headshots. </p>
+					<p data-aos="zoom-in">With a keen eye for detail and a commitment to quality, Craft ensures that every shot is perfect and every client is satisfied.</p>
+				</div>
+					<!-- Right - Cards -->
+				<div class="right">
+					<div class="card" data-aos="fade-down">
+					<i class="fa-solid fa-shield-halved"></i>
+					<h3>Branding</h3>
+					<p class="push">Craft offers branding services to help businesses showcase their unique identity through visuals.</p>
+					</div>
+
+					<div class="card" data-aos="fade-right">
+					<i class="fa-solid fa-display"></i>
+					<h3>Web Design</h3>
+					<p class="push">Craft offers web design services to help photographers showcase their work online.</p>
+					</div>
+
+					<div class="card" data-aos="fade-up">
+					<i class="fa-solid fa-mobile-screen-button"></i>
+					<h3>App Design</h3>
+					<p>Craft offers app design services to help create engaging mobile experiences.</p>
+					</div>
+
+					<div class="card" data-aos="fade-left">
+					<i class="fa-solid fa-rocket"></i>
+					<h3>Start Up</h3>
+					<p>Craft offers start-up services to help new photography businesses get off the ground.</p>
+					</div>					
+				</div>			
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="cta" id="contact">
+		<div class="container">
+			<h2 data-aos="fade-down">do you have an awesome project in mind?</h2>
+			<p data-aos="zoom-in">Craft is eager to help bring your vision to life! Contact them today to discuss your photography project.</p>
+			<a class="btn" data-aos="fade-up">get in touch!</a>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<footer>
+		<div class="container">
+			<div class="footer-flex">
+				<div class="card">
+					<div class="about" data-aos="fade-right">
+						<div class="text">
+							<h2>about craft</h2>
+							<p>Craft is a photography studio dedicated to creating beautiful, lasting memories through expertly crafted photographs. Contact them today to learn more.</p>
+							<a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+							<a href="https://www.facebook.com/andres.hamburger/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+							<a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/andre.hamburger/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="contact" data-aos="zoom-in">
+						<div class="text">
+							<h2>contact info</h2>
+							<p class="push">Address:</p>
+							<p> Cronin Haven, Montreal, Quebec</p>
+							<p class="push">Email:</p>
+							<p>contact@craftstudio.com</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="link" data-aos="fade-left">
+						<div class="text">
+							<h2>quick links</h2>
+							<p><a href="https://static.vecteezy.com/system/resources/thumbnails/024/468/900/original/about-us-text-cool-and-modern-animation-intro-outro-colorful-month-date-day-name-schedule-history-free-video.jpg" target="_blank">About</a></p>
+							<p><a href="https://townsvillesocialmediamarketing.com/wp-content/uploads/TermsofUse.png" target="_blank">Terms of Use</a></p>
+							<p><a href="https://media.istockphoto.com/photos/disclaimer-notice-picture-id1001563118?k=6&m=1001563118&s=170667a&w=0&h=E6PIGGdvZvJZVaoM3cb__qx3d4eirfTOj8jq7QpUA1M=" target="_blank">Disclaimers</a></p>
+							<p><a href="https://media.istockphoto.com/photos/hand-pressing-a-contact-us-button-picture-id487923098?k=6&m=487923098&s=612x612&w=0&h=fzAGlVKaTlnYJuZpRCD9ScQcyOzonwtwvOGMmvZBO1U=" target="_blank">Contact</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll-up Button and Bar -->
+	<div id="gotopbtn">
+		<div id="gotopbtn-filled"><i class="fa-solid fa-chevron-up"></i></div>
+	</div>	
+
+	<!-- Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+</html>
